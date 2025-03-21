@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chiedozie Onyekwelu, Frontend Developer">
+    <meta name="publisher" content="PascalDigital">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="./assets/img/head1.jpg">
+    <link rel="icon" type="image/jpeg" href="./assets/img/head1.jpg">
+    <title>PascalDigitals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./videos.css">
+    <script src="./videos.js" defer></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="./assets/img/head4.jpg" alt=""></div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="uil uil-list-ul"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./designs.html">Services</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="home" id="home">
+        <section class="teaching" id="teaching">
+            <h2>Teaching and Courses</h2>
+            <p>Our teaching and courses are designed to help you master the skills you need to succeed in the digital world. Whether you're a beginner or an experienced professional, our courses will provide you with the knowledge and tools you need to excel.</p>
+        </section>
+
+
+        <div class="video-grid"> 
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/POdQuNYi74E?si=8RjPT4VVVwbztM3T" title="Video 1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Using smartphone to Design a flyer</p>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/o82STNtxIi4?si=BEY3poGnP2yDlq-O" title="Video 5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Creating a marketing videos</p>
+            </div>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/dWoIyiZTq9M?si=GuS35IPOokO-FhAc" title="Video 3" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Watch on YouTube</p>
+            </div>
+            <div class="video">
+                <h2>Other courses will be uploaded here</h2>
+            </div>
+        </div>
+
+        <div class="contact-popup" id="contact-popup">
+            <div class="contact" id="chatAdmin">
+                <span class="close-btn" id="close-btn">&times;</span>
+                <h2>Chat with Admin</h2>
+                <form action="https://formspree.io/f/mldgwarr"
+                method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <div class="chatAdmins-btn">
+                        <button type="submit">Send</button>
+                        <a href="https://wa.me/2349153251972?text=Hello%20I%20want%20to%20chat" target="_blank"><button type="button">whatsapp</button></a>
+                    </div>
+                </form>
+            </div>      
+        </div>
+    </div>
+
+    <a href="./index.html" title="Go back to Home"> <i class="uil uil-angle-left"></i></a>
+
+    <footer>
+        <div class="footer-content">
+            <h3>PascalDigitals</h3>
+            <p>Follow us on all our social media handles to stay updated with the latest news and updates.</p>
+            <ul class="socials">
+                <li><a href="https://facebook.com"><i class="uil uil-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com"><i class="uil uil-twitter"></i></a></li>
+                <li><a href="https://instagram.com"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="https://linkedin.com"><i class="uil uil-linkedin"></i></a></li>
+                <li><a href="https://youtube.com"><i class="uil uil-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 PascalDigitals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+      
+            var form = event.target;
+            var formData = new FormData(form);
+      
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById("successMessage").style.display = "block"; // Show success message
+                    form.reset(); // Clear the form
+                } else {
+                    alert("Oops! Something went wrong.");
+                }
+            }).catch(error => alert("Error: " + error));
+        });
+      </script>
+</body>
+</html>
