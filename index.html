@@ -1,105 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Chiedozie Onyekwelu, Frontend Developer">
-    <meta name="publisher" content="PascalDigital">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta property="og:image" content="./assets/img/head1.jpg">
-    <link rel="icon" type="image/jpeg" href="./assets/img/head1.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Chiedozie Onyekwelu, Frontend Developer">
+  <meta name="publisher" content="PascalDigital">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:image" content="./assets/head1.jpg">
+  <link rel="icon" type="image/jpeg" href="./assets/head1.jpg">
+  <title>PascalDigitals</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <title>PascalDigitals</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" crossorigin="anonymous"></script>
+  <!-- ...existing code... -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <!-- ...existing code... -->
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"><img src="./assets/img/head4.jpg" alt=""></div>
-            <div class="menu-toggle" id="mobile-menu">
-                <i class="uil uil-list-ul"></i>
-            </div>
-            <ul class="nav-list">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./videos.html">Teaching</a></li>
-                <li><a href="./designs.html">Services</a></li>
-                <li><a href="#contact" id="contact-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="home" id="home">
-
-        <div class="about">
-            <p class="p" style="margin: 10px; margin-top: 80px; font-family: sans-serif; background-color: rgba(255, 72, 0, 0.829); color: #fff;">Welcome! to PascalDigitals, your premier destination for digital learning and growth. <b>We sell graphics design courses.  We design, Print , deliver.</b></p>
-
-            <div class="about-intro">
-                <!--<div class="two-intro">
-                    <p>We sell graphics design courses.  We design, Print , deliver</p>
-                    <p>Our offline courses offer hands-on training and personalized attention, helping you to master the skills you need to succeed in the digital world.</p>
-                </div>--->
-                <div class="btn-home" style="font-family: sans-serif; margin: 10px;">
-                    <a href="./videos.html"><button>Get Course</button></a>
-                    <a href="./designs.html"><button> Designs</button></a>
-                    <a href=""><button id="contact-linkA" >Chat Admin</button ></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact-popup" id="contact-popup">
-            <div class="contact" id="chatAdmin">
-                <span class="close-btn" id="close-btn">&times;</span>
-                <h2>Chat with Admin</h2>
-                <form action="https://formspree.io/f/mldgwarr"
-                method="POST">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <textarea name="message" placeholder="Message" required></textarea>
-                    <div class="chatAdmins-btn">
-                        <button type="submit">Send</button>
-                        <a href="https://chat.whatsapp.com/BYIQ7gecwnI0NKA2gNGU5l" target="_blank"><button type="button">whatsapp</button></a>
-                    </div>
-                </form>
-            </div>      
-        </div>
-
+  <!-- Header -->
+  <header class="header">
+    <div class="container" >
+      <div class="logo">Pascal<span>Digitals</span></div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn">Contact Us</a>
+      </nav>
     </div>
-    <footer>
-        <div class="footer-content">
-            <h3>PascalDigitals</h3>
-            <p>Follow us on all our social media handles to stay updated with the latest news and updates.</p>
-            <ul class="socials">
-                
-                <li><a href="https://x.com/AdeRhema?t=qY5PaixyHYR-QBJH_DrH-w&s=09"><i class="uil uil-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/pascaldigitals_adverts?igsh=YzljYTk1ODg3Zg=="><i class="uil uil-instagram"></i></a></li>
-                <li><a href="https://youtube.com/@pascaldigitals659?feature=shared"><i class="uil uil-youtube"></i></a></li>
-            </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Pascal-Digitals<br>Graphic Design Agency</h1>
+        <p>We offer a wide range of digital services to help you achieve your goals. we have the expertise to serve you.</p>
+        <div class="handle-icons">
+          <span class="social-icons">
+            <a href="https://wa.me/+234 803 250 4030" title="WhatsApp" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+
+            <a href="https://youtube.com/@pascaldigitals659?feature=shared" title="YouTube" rel="noopener"><i class="fab fa-youtube"></i></a>
+            <a href="https://youtube.com/@pascaldigitals659?feature=shared" title="TikTok" rel="noopener"><i class="fab fa-tiktok"></i></a>
+            <a href="https://x.com/AdeRhema?t=qY5PaixyHYR-QBJH_DrH-w&s=09" title="Twitter" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="tel:+234XXXXXXXXXX" title="Phone"><i class="fas fa-phone"></i></a>
+          </span> 
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 PascalDigitals. All rights reserved.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaching Section with Videos -->
+<section class="video-section" id="teaching">
+    <div class="container">
+      <h2>Learn With Me</h2>
+      <p>I’m not just a designer — I teach too! I share practical tips, tutorials, and project breakdowns to help you master design faster.</p>
+      
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-box">
+          <iframe 
+            width="100%" 
+            height="250" 
+            src="https://www.youtube.com/embed/POdQuNYi74E?si=8RjPT4VVVwbztM3T" 
+            frameborder="0" 
+            title="YouTube Video 1"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
         </div>
-    </footer>
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent default form submission
-      
-            var form = event.target;
-            var formData = new FormData(form);
-      
-            fetch(form.action, {
-                method: form.method,
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    document.getElementById("successMessage").style.display = "block"; // Show success message
-                    form.reset(); // Clear the form
-                } else {
-                    alert("Oops! Something went wrong.");
-                }
-            }).catch(error => alert("Error: " + error));
-        });
-      </script>
+  
+        <!-- Video 2 -->
+          <iframe 
+            width="100%" 
+            height="250" 
+            src="https://www.youtube.com/embed/dWoIyiZTq9M?si=GuS35IPOokO-FhAc" 
+            frameborder="0" 
+            title="YouTube Video 2"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+          </iframe>
+        </div>
+      </div>
+  
+      <a href="#contact" class="btn more-btn">See More Tutorials</a>
+    </div>
+  </section>
+  
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Build your best product with us!</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Branding</h3>
+          <p>Creative direction and full brand packages for startups.</p>
+        </div>
+        <div class="card">
+          <h3>Courses</h3>
+          <p>Learn design from scratch. No experience needed!</p>
+        </div>
+        <div class="card">
+          <h3>Consultation</h3>
+          <p>Talk to a design expert and get advice for your project.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" >
+    <div class="container">
+      <h2>About Me</h2>
+      <p>We train, design, print, and deliver to your office or home. We also deal with other digital services, Such as:</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2>My Work</h2>
+      <div class="gallery-grid">
+        <img src="./assets/1.jpg" alt="Design 1">
+        <img src="./assets/2.jpg" alt="Design 2">
+        <img src="./assets/3.jpg" alt="Design 3">
+        <img src="./assets/4.jpg" alt="Design 4">
+        <img src="./assets/5.jpg" alt="Design 5">
+        <img src="./assets/6.jpg" alt="Design 6">
+        <img src="./assets/7.jpg" alt="Design 7">
+        <img src="./assets/8.jpg" alt="Design 8">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="whatsappForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social-icons">
+        <a href="https://wa.me/+234 803 250 4030"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://youtube.com/@pascaldigitals659?feature=shared"><i class="fab fa-youtube"></i></a>
+        <a href="https://youtube.com/@pascaldigitals659?feature=shared"><i class="fab fa-tiktok"></i></a>
+        <a href="https://x.com/AdeRhema?t=qY5PaixyHYR-QBJH_DrH-w&s=09"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/pascaldigitals_adverts?igsh=YzljYTk1ODg3Zg==" title="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a>
+      </div>
+    <a href="https://chat.whatsapp.com/BYIQ7gecwnI0NKA2gNGU5l" class="chat-btn" target="_blank">💬 Join Group</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 MyDesignHub. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
